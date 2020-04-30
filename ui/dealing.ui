@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>925</width>
+    <height>584</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>925</width>
+    <height>584</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>925</width>
+    <height>584</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>BUY SELL STOCKS</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../img/icon.ico</normaloff>../img/icon.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(144, 194, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="stocktable">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>881</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>881</width>
+      <height>491</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>881</width>
+      <height>491</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(191, 204, 204);
+</string>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderHighlightSections">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderHighlightSections">
+     <bool>false</bool>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="homebutton">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>520</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#homebutton{
+background: rgb(255, 46, 67);
+border-radius:15px;
+font-size:24px;
+font-variant:small-caps;
+}
+QWidget#homebutton:hover{
+background: rgb(255, 87, 98);
+border-radius:15px;
+font-size:24px;
+font-variant:small-caps;
+}</string>
+    </property>
+    <property name="text">
+     <string>home</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="amount">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>530</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:5px;
+background:white;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="dealbutton">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>520</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QWidget#dealbutton{
+border-radius:10px;
+background:rgb(90, 181, 70);
+color:black;
+font-size:26px;
+font-variant:small-caps;
+}
+QWidget#dealbutton:hover{
+border-radius:10px;
+background:rgba(139, 190, 99,0.8);
+color:black;
+font-size:26px;
+font-variant:small-caps;
+}</string>
+    </property>
+    <property name="text">
+     <string>submit</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="detail">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>540</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-variant:small-caps;
+font-size:20px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="notify">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>510</y>
+      <width>361</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-variant:small-caps;
+font-size:20px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

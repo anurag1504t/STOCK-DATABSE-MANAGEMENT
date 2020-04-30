@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>575</width>
+    <height>656</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>575</width>
+    <height>656</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>575</width>
+    <height>656</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>STOCK DATABASE</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../img/icon.ico</normaloff>../img/icon.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:black;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="regbutton">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>40</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+
+QWidget#regbutton{
+border-radius:5px;
+background:rgb(82, 167, 106);
+font-size:24px;
+font-variant:small-caps;
+
+}
+QWidget#regbutton:hover{
+border-radius:5px;
+background:rgba(82, 167, 106,0.8);
+font-size:24px;
+font-variant:small-caps;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>register</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="logbutton">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>40</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QWidget#logbutton{
+border-radius:5px;
+background:rgb(121, 168, 255);
+font-size:24px;
+font-variant:small-caps;
+}
+QWidget#logbutton:hover{
+border-radius:5px;
+background:rgba(121, 168, 255,0.5);
+font-size:24px;
+font-variant:small-caps;
+}</string>
+    </property>
+    <property name="text">
+     <string>login</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="status">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>561</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0);
+color:rgb(255, 159, 129);
+font-size:22px;
+font-variant:small-caps;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="userid">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>331</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(215, 194, 255);
+font-size:29px;
+font-variant:small-caps;
+font-family:Comic Sans MS;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="profile">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>40</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QWidget#profile{
+border-radius:5px;
+background:rgb(83, 120, 255);
+font-size:24px;
+font-variant:small-caps;
+
+}
+QWidget#profile:hover{
+border-radius:5px;
+background:rgba(83, 120, 255,0.5);
+font-size:24px;
+font-variant:small-caps;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>profile</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stockdata">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>110</y>
+      <width>250</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#stockdata{
+background:url(img/sd.jpg);
+border-radius:5px;
+}
+QWidget#stockdata:hover{
+background:url(img/sdh.jpg);
+border-radius:5px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stocksearch">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>250</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#stocksearch{
+background:url(img/s.jpg);
+border-radius:5px;
+}
+QWidget#stocksearch:hover{
+background:url(img/sh.jpg);
+border-radius:5px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exitbutton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>600</y>
+      <width>501</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#exitbutton{
+background: rgb(255, 46, 67);
+border-radius:15px;
+font-size:24px;
+font-variant:small-caps;
+}
+QWidget#exitbutton:hover{
+background: rgb(255, 87, 98);
+border-radius:15px;
+font-size:24px;
+font-variant:small-caps;
+}</string>
+    </property>
+    <property name="text">
+     <string>exit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="searchdbbutton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>350</y>
+      <width>250</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#searchdbbutton{
+background:url(img/ss.jpg);
+border-radius:5px;
+}
+QWidget#searchdbbutton:hover{
+background:url(img/ssh.jpg);
+border-radius:5px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="dealbutton">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>350</y>
+      <width>250</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="tabletTracking">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#dealbutton{
+background:url(img/bs.jpg);
+border-radius:5px;
+}
+QWidget#dealbutton:hover{
+background:url(img/bsh.jpg);
+border-radius:5px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

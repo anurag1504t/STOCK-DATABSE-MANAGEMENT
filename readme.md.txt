@@ -1,0 +1,1 @@
+install required modules and run home.py

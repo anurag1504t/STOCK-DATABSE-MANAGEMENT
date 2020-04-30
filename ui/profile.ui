@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>701</width>
+    <height>817</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>701</width>
+    <height>817</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>701</width>
+    <height>817</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Profile</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../img/icon.ico</normaloff>../img/icon.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(94, 177, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>160</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Comic Sans MS&quot;;
+font-variant:small-caps;</string>
+    </property>
+    <property name="text">
+     <string>First Name: </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>230</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Comic Sans MS&quot;;
+font-variant:small-caps;</string>
+    </property>
+    <property name="text">
+     <string>Last Name:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>310</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Comic Sans MS&quot;;
+font-variant:small-caps;</string>
+    </property>
+    <property name="text">
+     <string>UserId:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>380</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Comic Sans MS&quot;;
+font-variant:small-caps;</string>
+    </property>
+    <property name="text">
+     <string>Email:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="fname">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>170</y>
+      <width>511</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Consolas&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lname">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>240</y>
+      <width>501</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Consolas&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="userid">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>320</y>
+      <width>501</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Consolas&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="email">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>390</y>
+      <width>501</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Consolas&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="logoutbutton">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>700</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+
+QWidget#logoutbutton{
+border-radius:10px;
+background:rgb(255, 224, 160);
+color:black;
+font-size:22px;
+font-variant:small-caps;
+
+}
+QWidget#logoutbutton:hover{
+border-radius:10px;
+background:rgba(255, 224, 160,0.9);
+color:black;
+font-size:22px;
+font-variant:small-caps;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>logout</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="homebutton">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>90</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QWidget#homebutton{
+border-radius:10px;
+background:rgb(90, 181, 70);
+color:black;
+font-size:24px;
+font-variant:small-caps;
+}
+QWidget#homebutton:hover{
+border-radius:10px;
+background:rgba(139, 190, 99,0.8);
+color:black;
+font-size:24px;
+font-variant:small-caps;
+}</string>
+    </property>
+    <property name="text">
+     <string>home</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="investment">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>20</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QWidget#investment{
+border-radius:10px;
+background:rgb(90, 181, 70);
+color:black;
+font-size:24px;
+font-variant:small-caps;
+}
+QWidget#investment:hover{
+border-radius:10px;
+background:rgba(139, 190, 99,0.8);
+color:black;
+font-size:24px;
+font-variant:small-caps;
+}</string>
+    </property>
+    <property name="text">
+     <string>investment</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delbutton">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>700</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QWidget#delbutton{
+border-radius:10px;
+background:rgb(255, 69, 69);
+color:black;
+font-size:22px;
+font-variant:small-caps;
+}
+QWidget#delbutton:hover{
+border-radius:10px;
+background:rgba(255, 89, 89,0.9);
+color:black;
+font-size:22px;
+font-variant:small-caps;
+}</string>
+    </property>
+    <property name="text">
+     <string>delete account</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="confirmdel">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>760</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Consolas&quot;;
+color:rgb(255, 39, 89);
+background:black;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="canceldel">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>760</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+
+QWidget#canceldel{
+border-radius:10px;
+background:rgb(104, 117, 108);
+color:black;
+font-size:22px;
+font-variant:small-caps;
+
+}
+QWidget#canceldel:hover{
+border-radius:10px;
+background:rgba(147, 158, 157,0.9);
+color:black;
+font-size:22px;
+font-variant:small-caps;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>cancel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="confirmdelbutton">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>760</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QWidget#confirmdelbutton{
+border-radius:10px;
+background:rgb(255, 69, 69);
+color:black;
+font-size:22px;
+font-variant:small-caps;
+}
+QWidget#confirmdelbutton:hover{
+border-radius:10px;
+background:rgba(255, 89, 89,0.9);
+color:black;
+font-size:22px;
+font-variant:small-caps;
+}</string>
+    </property>
+    <property name="text">
+     <string>delete</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgbox">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>20</y>
+      <width>119</width>
+      <height>115</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:url(img/pp.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>450</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Comic Sans MS&quot;;
+font-variant:small-caps;</string>
+    </property>
+    <property name="text">
+     <string>Account:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>520</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Comic Sans MS&quot;;
+font-variant:small-caps;</string>
+    </property>
+    <property name="text">
+     <string>Price:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="acctype">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>460</y>
+      <width>401</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Consolas&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="price">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>520</y>
+      <width>511</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Consolas&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>590</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Comic Sans MS&quot;;
+font-variant:small-caps;</string>
+    </property>
+    <property name="text">
+     <string>Phone:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="phonep">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>590</y>
+      <width>501</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Consolas&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="phones">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>630</y>
+      <width>401</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Consolas&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

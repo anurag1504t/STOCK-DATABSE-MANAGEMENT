@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>894</width>
+    <height>587</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>894</width>
+    <height>587</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>894</width>
+    <height>587</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>LIVE STOCK</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../img/icon.ico</normaloff>../img/icon.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="stocktbl">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>20</y>
+      <width>821</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>821</width>
+      <height>461</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>821</width>
+      <height>461</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(191, 204, 204);
+</string>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::DoubleClicked</set>
+    </property>
+    <property name="dragEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderHighlightSections">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderHighlightSections">
+     <bool>false</bool>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="homebutton">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>510</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#homebutton{
+background: rgb(255, 46, 67);
+border-radius:15px;
+font-size:24px;
+font-variant:small-caps;
+}
+QWidget#homebutton:hover{
+background: rgb(255, 87, 98);
+border-radius:15px;
+font-size:24px;
+font-variant:small-caps;
+}</string>
+    </property>
+    <property name="text">
+     <string>home</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="updatebutton">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>510</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QWidget#updatebutton{
+border-radius:10px;
+background:rgb(90, 181, 70);
+color:black;
+font-size:24px;
+font-variant:small-caps;
+}
+QWidget#updatebutton:hover{
+border-radius:10px;
+background:rgba(139, 190, 99,0.8);
+color:black;
+font-size:24px;
+font-variant:small-caps;
+}</string>
+    </property>
+    <property name="text">
+     <string>update</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="dateshow">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>510</y>
+      <width>441</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-variant:small-caps;
+font-size:25px;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

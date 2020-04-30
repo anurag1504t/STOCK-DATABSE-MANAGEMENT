@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>830</width>
+    <height>776</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>830</width>
+    <height>776</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>830</width>
+    <height>776</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>USER REGISTRATION</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../img/icon.ico</normaloff>../img/icon.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:url(img/regbg.jpg);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="userid">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>310</y>
+      <width>421</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Comic Sans MS&quot;;
+background: white;
+border-radius:15px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="fname">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>90</y>
+      <width>421</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Comic Sans MS&quot;;
+background: white;
+border-radius:15px;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lname">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>170</y>
+      <width>421</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Comic Sans MS&quot;;
+background: white;
+border-radius:15px;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="email">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>230</y>
+      <width>421</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Comic Sans MS&quot;;
+background: white;
+border-radius:15px;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="pwd">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>390</y>
+      <width>421</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Comic Sans MS&quot;;
+background: white;
+border-radius:15px;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reg_button">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>710</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QWidget#reg_button{
+border-radius:10px;
+background:rgb(90, 181, 70);
+color:black;
+font-size:24px;
+font-variant:small-caps;
+}
+QWidget#reg_button:hover{
+border-radius:10px;
+background:rgba(139, 190, 99,0.8);
+color:black;
+font-size:24px;
+font-variant:small-caps;
+}</string>
+    </property>
+    <property name="text">
+     <string>submit</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>10</y>
+      <width>241</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 25pt &quot;Comic Sans MS&quot;;
+color:rgb(103, 165, 70);</string>
+    </property>
+    <property name="text">
+     <string>REGISTER</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="fname_error">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>140</y>
+      <width>401</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:red;
+font-variant:small-caps;
+font-size:22px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="email_error">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>280</y>
+      <width>401</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:red;
+font-variant:small-caps;
+font-size:22px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="id_error">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>360</y>
+      <width>401</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:red;
+font-variant:small-caps;
+font-size:22px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pwd_error">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>490</y>
+      <width>401</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:red;
+font-variant:small-caps;
+font-size:22px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exitbutton">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>710</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#exitbutton{
+background: rgb(255, 46, 67);
+border-radius:15px;
+font-size:24px;
+font-variant:small-caps;
+}
+QWidget#exitbutton:hover{
+background: rgb(255, 87, 98);
+border-radius:15px;
+font-size:24px;
+font-variant:small-caps;
+}</string>
+    </property>
+    <property name="text">
+     <string>exit</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="repwd">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>440</y>
+      <width>421</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Comic Sans MS&quot;;
+background: white;
+border-radius:15px;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgbox">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>100</y>
+      <width>119</width>
+      <height>115</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="phonep">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>520</y>
+      <width>421</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Comic Sans MS&quot;;
+background: white;
+border-radius:15px;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="phones">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>600</y>
+      <width>421</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Comic Sans MS&quot;;
+background: white;
+border-radius:15px;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="phoneperr">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>570</y>
+      <width>401</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:red;
+font-variant:small-caps;
+font-size:22px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="phoneserr">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>650</y>
+      <width>401</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:red;
+font-variant:small-caps;
+font-size:22px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="acctype">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>270</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:20px;
+background:white;
+font-variant:small-caps;
+font-size:22px;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>professional</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>general</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
